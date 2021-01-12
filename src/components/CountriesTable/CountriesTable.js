@@ -1,6 +1,9 @@
 import styles from './CountriesTable.module.css';
 
-export default function CountriesTable() {
+export default function CountriesTable({ countries }) {
+
+    console.log(countries);
+
     return (
         <div>
             Countries Table

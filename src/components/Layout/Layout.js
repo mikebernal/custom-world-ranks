@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import styles from './Layout.module.css';
 
-export default function Layout({ children, title='World Ranks' }) {
+export default function Layout({ children, title = 'World Ranks' }) {
     return (
         <div className={styles.container} >
             <Head>
