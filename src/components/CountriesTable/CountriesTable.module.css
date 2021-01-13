@@ -8,7 +8,6 @@
 
 .heading {
     display: flex;
-    /* align-self: stretch; */
     align-items: center;
     justify-content: space-around;
     margin-bottom: 36px;
@@ -24,6 +23,7 @@
     border: none;
     outline: none;
     color: inherit;
+    display: flex;
 }
 
 .body {
@@ -31,7 +31,6 @@
     align-self: stretch;
     justify-content: space-around;
     align-items: center;
-    /* background: white; */
     color: inherit;
 
     padding: 26px;
