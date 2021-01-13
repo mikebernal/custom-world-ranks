@@ -1,0 +1,64 @@
+.countries_table {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+    color: inherit;
+}
+
+.heading {
+    display: flex;
+    /* align-self: stretch; */
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 36px;
+    padding: 20px;
+
+    text-align: center;
+    background-color: none;
+    flex: 1;
+}
+
+.heading_label {
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
+.body {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-around;
+    align-items: center;
+    /* background: white; */
+    color: inherit;
+
+    padding: 26px;
+    border-radius: 8px;
+
+    margin-bottom: 24px;
+    box-shadow: var(--box-shadow);
+}
+
+.body:hover {
+    cursor: pointer;
+    --box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.flag {
+    flex: 1;
+    /* margin-right: 16px; */
+}
+
+.flag img{
+    width: 100%;
+    border-radius: 2px;
+}
+
+.name,
+.population,
+.area,
+.gini {
+    flex: 4;
+    text-align: center;
+}

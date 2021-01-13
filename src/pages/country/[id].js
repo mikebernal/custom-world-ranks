@@ -1,20 +1,11 @@
 import Layout from '../../components/Layout/Layout';
 import styles from './Country.modules.css';
-import Layout from '../../components/Layout/Layout';
 
-export default function Component({ country }) {
+export default function Component() {
 
     return (
-        <Layout title={country.title} >
+        <Layout>
 
         </Layout>
     )
-}
-
-export async function getStaticPaths() {
-
-}
-
-export async function getStaticProps() {
-
 }
