@@ -107,9 +107,10 @@ export default function Country({ country }) {
                     </div>
 
                     {/* Neighbouring country */}
-                    <div className={styles.row}>
+
+                    <div className={styles.neighbour}>
                         <div className={styles.label}>Neighbouring country</div>
-                        <div className={styles.neighbour_container}>
+                        <div className={styles.neighbour_value}>
                             {borders.map(({ flag, name }) => (
                                 <div className={styles.neighbours} key={name}>
                                     <img src={flag} alt={name} />
@@ -119,6 +120,8 @@ export default function Country({ country }) {
                             ))}
                         </div>
                     </div>
+                    
+                  
 
                 </div>
             </div>

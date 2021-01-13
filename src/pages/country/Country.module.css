@@ -11,6 +11,7 @@
 .heading {
     margin-bottom: 16px;
     font-weight: 500;
+    padding-left: 16px;
 }
 
 .overview {
@@ -76,8 +77,14 @@
     padding: 32px;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid var(--text-color);
+}
 
-.neighbour_container {
+.neighbour_value {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -86,16 +93,16 @@
     align-self: stretch;
 }
 
-.neighbour_container img {
+.neighbour_value img {
     max-width: 120px;
     flex: 1;
-
 }
 
 .neighbour {
     width: 100%;
     border-radius: 4px;
     flex: 1;
+    margin-top: 36px;
 }
 
 .details_border_name {
