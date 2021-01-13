@@ -27,7 +27,7 @@ export default function Home({ countries }) {
 
         {/* Search input */}
         <div className={styles.input}>
-          <SearchInput placeholder="Search by country name, region, or subregion" onChange={onInputChange}/>
+          <SearchInput placeholder="Search by country name, region, or subregion" onChange={onInputChange} />
         </div>
       </div>
 

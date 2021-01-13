@@ -1,7 +1,7 @@
 import Layout from '../../components/Layout/Layout';
-import styles from './Country.modules.css';
+import styles from './Country.module.css';
 
-export default function Component() {
+export default function Country() {
 
     return (
         <Layout>
