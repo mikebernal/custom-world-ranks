@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    min-width: 1100px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.heading {
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.overview {
+    flex: 1;
+    padding: 32px;
+    align-self: stretch;
+    background-color: var(--background-color-light);
+    color: inherit;
+    border-radius: 8px;
+}
+
+.stats {
+    display: flex;
+    padding: 0 16px;
+}
+
+.population_column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.area_column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.name {
+    font-size: 26px;
+    text-align: center;
+}
+
+.code {
+    font-size: 14px;
+    text-align: center;
+}
+
+.population {
+    font-size: 16px;
+}
+
+.label {
+    font-size: 16px;
+}
+
+.value {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.flag img {
+    width: 100%;
+}
+
+.details {
+    background-color: var(--background-color-light);
+    border-radius: 8px;
+    color: inherit;
+    flex: 2;
+    padding: 32px;
+}
+
+
+.neighbour_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.neighbour_container img {
+    max-width: 120px;
+    flex: 1;
+
+}
+
+.neighbour {
+    width: 100%;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.details_border_name {
+    flex: 1;
+}
