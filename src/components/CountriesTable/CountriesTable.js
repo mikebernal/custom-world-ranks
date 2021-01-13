@@ -66,28 +66,26 @@ export default function CountriesTable({ countries }) {
             {/* Countries table heading */}
             <div className={styles.heading}>
 
-       
-
                 {/* Name */}
-                <button className={styles.heading_label} onClick={() => setValueAndDirection('name')}>
+                <button className={`${styles.heading_label} ${styles.country_label}` } onClick={() => setValueAndDirection('name')}>
                     <span>Country</span>
-                    { value ===' name' && <SortArrow direction={direction} /> }
+                    { value ==='name' && <SortArrow direction={direction} /> }
                 </button>
                 
                 {/* Population */}
-                <button className={styles.heading_label} onClick={() => setValueAndDirection('population')}>
+                <button className={`${styles.heading_label} ${styles.population_label}` } onClick={() => setValueAndDirection('population')}>
                     <span>Population</span>
                     { value === 'population' && <SortArrow direction={direction} /> }
                 </button>
 
                 {/* Area */}
-                <button className={styles.heading_label} onClick={() => setValueAndDirection('area')}>
+                <button className={` ${styles.heading_label} ${styles.area_label}` } onClick={() => setValueAndDirection('area')}>
                     <span>Area</span>
                     { value === 'area' && <SortArrow direction={direction} /> }
                 </button>
 
                 {/* Gini */}
-                <button className={styles.heading_label} onClick={() => setValueAndDirection('gini')}>
+                <button className={` ${styles.heading_label} ${styles.gini_label}` } onClick={() => setValueAndDirection('gini')}>
                     <span>Gini</span>
                     { value === 'gini' && <SortArrow direction={direction} /> }
                 </button>
@@ -101,21 +99,21 @@ export default function CountriesTable({ countries }) {
                         <div className={styles.body}>
 
                             {/* Flag */}
-                            <div className={styles.flag}>
+                            <div className={`${styles.flag} ${styles.flag_value} `}>
                                 <img src={country.flag} alt={country.name}/>
                             </div>
 
                             {/* Name */}
-                            <div className={styles.name}>{country.name}</div>
+                            <div className={`${styles.name} ${styles.name_value}`}>{country.name}</div>
 
                             {/* Population */}
-                            <div className={styles.population}>{country.population}</div>
+                            <div className={`${styles.population} ${styles.population_value} `}>{country.population}</div>
 
                             {/* Area */}
-                            <div className={styles.area}>{country.area}</div>
+                            <div className={`${styles.area} ${styles.area_value} `} >{country.area}</div>
 
                             {/* Gini */}
-                            <div className={styles.gini}>{country.gini  || 0} %</div>
+                            <div className={`${styles.gini} ${styles.gini_value} `}>{country.gini  || 0} %</div>
 
                         </div>
                     </Link>

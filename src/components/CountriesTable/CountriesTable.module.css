@@ -50,7 +50,7 @@
     /* margin-right: 16px; */
 }
 
-.flag img{
+.flag img {
     width: 100%;
     border-radius: 2px;
 }
@@ -61,4 +61,41 @@
 .gini {
     flex: 4;
     text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    .area_label,
+    .gini_label,
+    .flag_value,
+    .area_value, 
+    .gini_value {
+        display: none;
+    }
+
+    .country_label, 
+    .population_label {
+        display: flex;
+    }
+    
+    .country_label span, 
+    .population_label  span{
+        flex: 1;
+    }
+     
+    .name_value {
+        text-align: left;
+    }
+
+    .population_value {
+        text-align: right;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        flex: 1;
+    }
+
+
 }
