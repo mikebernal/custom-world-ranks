@@ -26,8 +26,8 @@ export async function getServerSideProps({ params }) {
   const countries = await res.json();
 
   return {
-      props: {
-          countries,
-      }
+    props: {
+      countries,
+    }
   }
 }
